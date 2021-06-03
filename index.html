@@ -1,11 +1,273 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-  </head>
-  <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
-  </body>
-</html>
+<div class="article__content long-form-content" itemprop="articleBody">
+  <style><!--
+.marketing-block ul {
+margin-bottom: 0;
+}
+--></style>
+<p>To make things a bit easier, I broke the plugins into the following categories:</p>
+<div class="marketing-block marketing-block--light marketing-block--padded">
+<ul>
+<li><a href="#snippets-and-code-style">Snippets and code style</a></li>
+<li><a href="#git-integration">Git integration</a></li>
+<li><a href="#linters-and-syntax-highlighting">Linters and syntax highlighting</a></li>
+<li><a href="#editor-enhancements">Editor enhancements</a></li>
+<li><a href="#themes-and-fun">Themes and fun</a></li>
+</ul>
+</div>
+
+
+<h2 id="snippets-and-code-style">Snippets and code style</h2>
+<p>Snippets are a great built-in feature of Sublime Text. You can build your own, in addition to using the preinstalled ones, or use a plugin that has a bunch for you like <a href="http://emmet.io/" target="_blank" rel="nofollow noopener noreferrer">Emmet</a>. The way snippets work is simple—you simply begin typing a keyword that activates a snippet, and press tab to expand the text.</p>
+<h3>Emmet</h3>
+<figure><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: emmet" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-emmet.gif?v=1522173968" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-emmet.gif?v=1522173968">
+<figcaption>Expanding markup with Emmet.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/Emmet" target="_blank" rel="nofollow noopener noreferrer">Emmet</a> is a plugin that enables faster HTML and CSS creation with the use of snippets. It uses <a href="http://docs.emmet.io/abbreviations/" target="_blank" rel="nofollow noopener noreferrer">abbreviations</a> that expand to valid HTML tags.</p>
+<p>For example, to build out a navigation you only need to type the following code:</p>
+<script src="https://gist.github.com/shopifypartners/77e124a64ee74e19324693c0e15ed14e.js"></script><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-65dd2d5c662fd03f5ff2f424f9f5b311.css"><div id="gist45240857" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sublime-plugins-emmet-shorthand-html" class="file my-2">
+    
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-sublime-plugins-emmet-shorthand-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-html-LC1" class="blob-code blob-code-inner js-file-line">#page<span class="pl-kos">&gt;</span>div.logo+ul#navigation<span class="pl-kos">&gt;</span>li*5<span class="pl-kos">&gt;</span>a{Item $}</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/shopifypartners/77e124a64ee74e19324693c0e15ed14e/raw/b47b968e3e0b990fc414de1d5aec1e21c7e3ad8d/sublime-plugins-emmet-shorthand.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/shopifypartners/77e124a64ee74e19324693c0e15ed14e#file-sublime-plugins-emmet-shorthand-html">sublime-plugins-emmet-shorthand.html</a>
+        hosted with ❤ by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p>Which will expand to:</p>
+<script src="https://gist.github.com/shopifypartners/4dfd73ef21492990cd385f6220b08038.js"></script><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-65dd2d5c662fd03f5ff2f424f9f5b311.css"><div id="gist45240962" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sublime-plugins-emmet-shorthand-expanded-html" class="file my-2">
+    
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">page</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">logo</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">ul</span> <span class="pl-c1">id</span>="<span class="pl-s">navigation</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>=""<span class="pl-kos">&gt;</span>Item 1<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>=""<span class="pl-kos">&gt;</span>Item 2<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>=""<span class="pl-kos">&gt;</span>Item 3<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>=""<span class="pl-kos">&gt;</span>Item 4<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>=""<span class="pl-kos">&gt;</span>Item 5<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">li</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;/</span><span class="pl-ent">ul</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-sublime-plugins-emmet-shorthand-expanded-html-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/shopifypartners/4dfd73ef21492990cd385f6220b08038/raw/666ea4d85021223135976084f766f92ec97b4bca/sublime-plugins-emmet-shorthand-expanded.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/shopifypartners/4dfd73ef21492990cd385f6220b08038#file-sublime-plugins-emmet-shorthand-expanded-html">sublime-plugins-emmet-shorthand-expanded.html</a>
+        hosted with ❤ by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Emmet" target="_blank" rel="nofollow noopener noreferrer">View Emmet plugin</a></p>
+<h3>3. Alignment</h3>
+<figure><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: alignment" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-alignment.gif?v=1522174061" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-alignment.gif?v=1522174061">
+<figcaption>Aligning variable definitions with Alignment.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/Alignment" target="_blank" rel="nofollow noopener noreferrer">Alignment</a> plugin helps to easily align multiple selections, or multi-line selections. What that means is you can align multiple selections, or lines, via delimiter such as <code class="marketing-code">=</code>. Simply type <code class="marketing-code">ctrl + alt + a</code> on Windows, or <code class="marketing-code">cmd + ctrl + a</code> on a Mac, to align your selection. To align with <code class="marketing-code">:</code><a href="https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-sublime-alignment/" target="_blank" rel="nofollow noopener noreferrer">follow this tutorial</a> to setup custom delimiters.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Alignment" target="_blank" rel="nofollow noopener noreferrer">View Alignment plugin</a></p>
+<h2 id="git-integration">Git integration</h2>
+<p>Most developers use some type of version control. These days, Git seems to be the most popular. Here are a few Git related plugins for Sublime Text that make working with Git a lot easier.</p>
+<h3>4. SublimeGit</h3>
+<p><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: sublime git" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sublime-git.png?format=webp&amp;v=1522174153" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sublime-git.png?format=webp&amp;v=1522174153"></p>
+<p><a href="https://packagecontrol.io/packages/SublimeGit" target="_blank" rel="nofollow noopener noreferrer">SublimeGit</a> brings Git into Sublime, so you don’t need to go back and forth between the command line and your text editor. You used to have to pay for this plugin (that’s how awesome it is), but this past year it was open-sourced. It has a huge list of features, which you can find in the <a href="http://sublimegit.readthedocs.io/" target="_blank" rel="nofollow noopener noreferrer">SublimeGit docs</a>. To get started quickly, install the plugin and use the Command Palette to launch your Git commands.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/SublimeGit" target="_blank" rel="nofollow noopener noreferrer">View SublimeGit plugin</a></p>
+<h3>5. GitGutter</h3>
+<figure><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: gitgutter" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gitgutter_96ad2ffd-dd82-4817-afb0-dfb8d44162e0.png?format=webp&amp;v=1522174244" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gitgutter_96ad2ffd-dd82-4817-afb0-dfb8d44162e0.png?format=webp&amp;v=1522174244">
+<figcaption>Modified line, deleted region borders, and inserted line indicators in the Sublime Text gutter.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/GitGutter" target="_blank" rel="nofollow noopener noreferrer">GitGutter</a> brings some native <a href="https://atom.io/" target="_blank" rel="nofollow noopener noreferrer">Atom</a> functionality to Sublime, adding diff hints to the gutter of the sidebar. You can additionally hover on the indicators in the sidebar, to see a diff popup. You can perform a variety of commands on the change, such as copying the content of the diff state, reverting the changes back to the state in Git, jumping to next or previous change, and more.</p>
+<p class="marketing-block marketing-block--light marketing-block--padded">Check out our list of the 21 best <a href="/partners/blog/best-atom-packages" title="Atom packages" rel="noopener noreferrer">Atom packages</a> for front end developers.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/GitGutter" target="_blank" rel="nofollow noopener noreferrer">View GitGutter plugin</a></p>
+<h3>6. GitHubinator</h3>
+<figure><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: githubinator" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-githubinator.gif?v=1522174569" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-githubinator.gif?v=1522174569">
+<figcaption>Opening Git blame on Github for selected lines.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/GitHubinator" target="_blank" rel="nofollow noopener noreferrer">GitHubinator</a> is a plugin that shows selected text on a remote GitHub or Bitbucket repository. You simply highlight the text you want to search for, right click to open the context menu, and launch the corresponding Github or Bitbucket web page in your default browser. This plugin is amazing if you need to figure out who’s worked on a file previously, or check the Git blame.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/GitHubinator" target="_blank" rel="nofollow noopener noreferrer">View GitHubinator plugin</a></p>
+<h3>7. GitOpenChangedFiles</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: gitopenchangedfiles" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gitopenchangedfiles.gif?v=1522174700" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gitopenchangedfiles.gif?v=1522174700"></p>
+<p><a href="https://packagecontrol.io/packages/GitOpenChangedFiles" target="_blank" rel="nofollow noopener noreferrer">GitOpenChangedFiles</a> isn’t coy about what it does; its name says it all. Simply install and run <code class="marketing-code">cmd + option + o</code> on a Mac, or <code class="marketing-code">ctrl + shift + o</code> on Windows, and watch this plugin open the corresponding files for you in Sublime Text, with all the files you’ve changed in your branch.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/GitOpenChangedFiles" target="_blank" rel="nofollow noopener noreferrer">View GitOpenChangedFiles plugin</a></p>
+<p class="marketing-block marketing-block--light marketing-block--padded"><strong>You might also like:</strong> <a href="/partners/blog/the-ultimate-list-of-resources-for-shopify-theme-developers">The Essential List of Resources for Shopify Theme Development</a>.</p>
+<h2 id="linters-and-syntax-highlighting">Linters and syntax highlighting</h2>
+<p>While working on teams, consistency is imperative. Linters and syntax highlighting help provide that consistency and set best practices.</p>
+<h3>8. SublimeLinter</h3>
+<img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: sublimelinter" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sublimelinter_c6a0f063-e2c2-437e-a723-203918757f21.png?format=webp&amp;v=1522174895" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sublimelinter_c6a0f063-e2c2-437e-a723-203918757f21.png?format=webp&amp;v=1522174895">
+<p><a href="https://packagecontrol.io/packages/SublimeLinter" target="_blank" rel="nofollow noopener noreferrer">SublimeLinter</a> is the most popular linter available on Sublime, as it currently sits in the top 25 downloads on <a href="https://packagecontrol.io/browse/popular" target="_blank" rel="nofollow noopener noreferrer">Package Manager</a>. Once installed, you’ll also want to install plugins for the various languages that you might code in.</p>
+<p>To do this, just open Package Control to install plugins with the same name. Simply type <code class="marketing-code">SublimeLinter-&lt;lintername&gt;</code>, for example <code class="marketing-code">SublimeLinter-jshint</code>. You must install linter plugins with SublimeLinter—the version for Sublime Text 3 doesn’t come with them pre-installed.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/SublimeLinter" target="_blank" rel="nofollow noopener noreferrer">View SublimeLinter plugin</a></p>
+<h3>9. ChangeQuotes</h3>
+<figure><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: changequotes" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-changequotes.gif?v=1522175016" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-changequotes.gif?v=1522175016">
+<figcaption>Changing double to single quotes, with the Command Palette.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/ChangeQuotes" target="_blank" rel="nofollow noopener noreferrer">ChangeQuotes</a> “converts single and double quotes, and and re-escapes quotes within the string,” according to their docs. Once installed, whenever you want to change quotes, make sure your cursor is inside the quoted text. Open the Command Palette to run <code class="marketing-code">ChangeQuotes</code>—there is no need to select the text to change quotes.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/ChangeQuotes" target="_blank" rel="nofollow noopener noreferrer">View ChangeQuotes plugin</a></p>
+<p>There are a ton of plugins for syntax highlighting. These are the two major plugins we use at Shopify, that fall outside the existing syntax highlighting that ships with Sublime Text.</p>
+<h3>10. SASS</h3>
+<p><a href="https://packagecontrol.io/packages/Sass" target="_blank" rel="nofollow noopener noreferrer">The Sass plugin</a> adds syntax highlighting as well as tab/code completion, for Sass and SCSS files.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Sass" target="_blank" rel="nofollow noopener noreferrer">View Sass plugin</a></p>
+<h3>11. Babel</h3>
+<figure><img class="marketing-block marketing-block--bordered ls-is-cached lazyloaded" alt="sublime text plugins: syntax" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-syntax.png?format=webp&amp;v=1522175108" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-syntax.png?format=webp&amp;v=1522175108">
+<figcaption>Syntax highlighting courtesy of <a href="https://packagecontrol.io/packages/Babel" target="_blank" rel="nofollow noopener noreferrer">Babel</a>.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/Babel" target="_blank" rel="nofollow noopener noreferrer">Babel</a> adds syntax definitions for ES6 JavaScript, with React JSX extensions.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Babel" target="_blank" rel="nofollow noopener noreferrer">View Babel plugin</a></p>
+<h3>12. Siteleaf’s Liquid Syntax</h3>
+<p><a href="https://packagecontrol.io/packages/Siteleaf%20Liquid%20Syntax" target="_blank" rel="nofollow noopener noreferrer">Siteleaf’s Liquid Syntax</a> adds liquid syntax highlighting for Liquid as well as some handy snippets.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Siteleaf%20Liquid%20Syntax" target="_blank" rel="nofollow noopener noreferrer">View Siteleaf’s Liquid Syntax</a></p>
+<h2 id="editor-enhancements">Editor enhancements</h2>
+<h3>13. SideBarEnhancements</h3>
+<figure><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: sidebarenhancements" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sidebarenhancements.png?format=webp&amp;v=1522175178" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-sidebarenhancements.png?format=webp&amp;v=1522175178">
+<figcaption>Left: Before SidebarEnhancements. Right: After SidebarEnhancements.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank" rel="nofollow noopener noreferrer">SideBarEnhancements</a> provides enhancements to the operations on Sidebar of Files and Folders for Sublime Text. Particularly, it sets delete options as a “Move to trash,” includes an “Open with…”, gives you the ability to move files, and more.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank" rel="nofollow noopener noreferrer">View SideBar Enhancements plugin</a></p>
+<h3>14. Maybs Quit</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: maybs quit" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-maybs-quit.gif?v=1522175299" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-maybs-quit.gif?v=1522175299"></p>
+<p><a href="https://packagecontrol.io/packages/Maybs%20Quit" target="_blank" rel="nofollow noopener noreferrer">Maybs Quit</a> enables a quick panel to confirm quitting Sublime Text. Both <code class="marketing-code">cmd/ctrl+w</code> and <code class="marketing-code">cmd/ctrl+q</code> are too close to one another on the keyboard, and can lead to mistakes. Avoid quitting Sublime Text unintentionally when you’re only trying to close a file, by using Maybs Quit!</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Maybs%20Quit" target="_blank" rel="nofollow noopener noreferrer">View Maybs Quit plugin</a></p>
+<h3>15. AutoFileName</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: autofilename" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-autofilename.gif?v=1522175405" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-autofilename.gif?v=1522175405"></p>
+<p><a href="https://packagecontrol.io/packages/AutoFileName" target="_blank" rel="nofollow noopener noreferrer">AutoFileName</a> follows through on its name: it completes filenames automatically. It triggers a dropdown with file names relative to your existing file and subsequent path as you type.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/AutoFileName" target="_blank" rel="nofollow noopener noreferrer">View AutoFileName plugin</a></p>
+<p class="marketing-block marketing-block--light marketing-block--padded"><strong>You might also like:&nbsp;</strong><a href="/partners/blog/text-animation-css">How to Add CSS Text Animation to Custom Themes.</a></p>
+<h3>16. View In Browser</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: view in browser" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-view-in-browser.gif?v=1522175510" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-view-in-browser.gif?v=1522175510"></p>
+<p>View In Browser helps you to launch your projects into your default browser with a simple shortcut, <code class="marketing-code">ctrl+alt+v</code>. It also enables shortcuts for various other browsers installed on your computer, such as Chrome, Firefox, Internet Explorer and more.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/View%20In%20Browser" target="_blank" rel="nofollow noopener noreferrer">Checkout View In Browser plugin</a></p>
+<h3>17. GhostText</h3>
+<figure><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: ghosttext" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-ghosttext.gif?v=1522175668" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-ghosttext.gif?v=1522175668">
+<figcaption>Linking CodePen to Sublime Text with the GhostText plugin. 👻</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/GhostText" target="_blank" rel="nofollow noopener noreferrer">GhostText</a> is probably one of the coolest plugins I’ve seen in awhile. It allows you to link your Sublime Text editor (with all your plugins 🎉) to text areas in a browser. For example, you could work on a CodePen, but do all the editing in your main text editor. You just need to install the plugin and browser extension. Simply highlight the text area you want to link, and click the browser extension: then magic happens. ✨🐇🎩✨</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/GhostText" target="_blank" rel="nofollow noopener noreferrer">View GhostText plugin</a></p>
+<h3>18. BracketHighlighter</h3>
+<figure><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: brackethighlighter" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-brackethighlighter.png?format=webp&amp;v=1522175817" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-brackethighlighter.png?format=webp&amp;v=1522175817">
+<figcaption>Bracket highlighting in Sublime Text 3.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/BracketHighlighter" target="_blank" rel="nofollow noopener noreferrer">BracketHighlighter</a> does exactly what it says: it highlights the brackets in your code. It matches a variety of brackets, such as <code class="marketing-code">[]</code>, <code class="marketing-code">()</code>, <code class="marketing-code">{}</code>, <code class="marketing-code">””</code>, <code class="marketing-code">’’</code>, <code class="marketing-code">#!xml &lt;tag&gt;&lt;/tag&gt;</code>, as well as custom brackets if you add them.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/BracketHighlighter" target="_blank" rel="nofollow noopener noreferrer">View BracketHighlighter plugin</a></p>
+<h3>19. Gutter Color</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: gutter color" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gutter-color.png?format=webp&amp;v=1522175872" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-gutter-color.png?format=webp&amp;v=1522175872"></p>
+<p><a href="https://packagecontrol.io/packages/Gutter%20Color" target="_blank" rel="nofollow noopener noreferrer">Gutter Color</a> is a great plugin that displays a colored icon for all lines containing a color. What’s nice about this plugin, compared to others, is that the color highlighting is a bit less intrusive, as it only appears in the gutter (instead of behind a highlighted word). It will please the designer in you.</p>
+<h3>20. ColorPicker</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: colorpicker" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-colorpicker.gif?v=1522175953" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-colorpicker.gif?v=1522175953"></p>
+<p><a href="https://packagecontrol.io/packages/ColorPicker" target="_blank" rel="nofollow noopener noreferrer">ColorPicker</a> enables a color picker dialog and allows users to insert or change a selected color. To open the color picker, simply type <code class="marketing-code">cmd+shift+c</code> on a Mac, or <code class="marketing-code">ctrl+shift+c</code> on Windows or Linux. By default the hexcode inserted is uppercase, but you can change it to use lowercase letters by going to preferences and then package settings.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/ColorPicker" target="_blank" rel="nofollow noopener noreferrer">View ColorPicker plugin</a></p>
+<h3>21. A File Icon</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: a file icon" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-a-file-icon.png?format=webp&amp;v=1522175990" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-a-file-icon.png?format=webp&amp;v=1522175990"><br><a href="https://packagecontrol.io/packages/A%20File%20Icon" target="_blank" rel="nofollow noopener noreferrer">A File Icon</a> is great for easily scanning what files you have in your project. It simply adds pretty and customizable icons to supported files in your project sidebar. It’s supported by Material and Boxy Themes for customized thematic icons.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/A%20File%20Icon" target="_blank" rel="nofollow noopener noreferrer">View A File Icon plugin</a></p>
+<h2 id="themes-and-fun">Themes and fun</h2>
+<p>Since you’ll most likely spend lot of time using your text editor, it’s nice to make it as visually pleasing as possible. It’s important to know that themes are different from color schemes. A theme is the look of your editor itself, such as the sidebar UI, tabs, modal windows, etc. A color scheme is the background and syntax highlight colors of the main editing area.</p>
+<div class="marketing-block marketing-block--light marketing-block--padded grid-container leadpage-container gutter-bottom">
+<div class="leadpage__image"><img class="hide--mobile gutter-bottom--reset lazyload" alt="Template Icon" data-src="https://cdn.shopify.com/s/files/1/0070/7032/files/browser_loop.gif"></div>
+<div class="js-subscribe subscribe ">
+<div class="subscribe__content-wrapper">
+<div class="subscribe__content">
+<p class="heading--4">Resources to Grow Your Skills</p>
+<p>Get your free copy of the Technology Product CSV sent directly to your inbox.</p>
+<form class="subscribe__form marketing-form  marketing-form--inline" novalidate="novalidate" accept-charset="UTF-8" method="post" action="/content-services/subscribers" __bizdiag="1221662815" __biza="W___">
+<input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Bjwq3S+ZU2sBAegLlXZF7me0EiLRtu8oiVng/wyX/F/ZTWHRe80Vhi+iJ0lJy+NzykhNiDVfmzljVSGzmaeVkg=="> <label class="marketing-input-wrapper marketing-input-button-pair"><label class="marketing-input-wrapper marketing-input-button-pair"><span class="marketing-label marketing-label--hidden visuallyhidden">Email</span></label></label>
+<div class="marketing-input-button__field-wrapper">
+<input name="email" placeholder="Enter your email address" class="marketing-input-button-pair__input marketing-input subscribe__email" type="email" id="subscribe_email"><button name="button" type="submit" class="marketing-button marketing-form__button marketing-input-button-pair__button subscribe__submit " data-ga-event="content_upgrades" data-ga-action="technology_product_csv" data-ga-label="email_signup">Get free copy</button>
+</div>
+<input type="hidden" name="data_extension_key" id="data_extension_key" value="3A3467BB-6C76-4BFC-857E-E1371284F954"> <input type="hidden" name="partner_lead_recent_activity_source" id="partner_lead_recent_activity_source" value="CU-technologyproductcsv"> <input type="hidden" name="partner_lead_recent_activity_channel" id="partner_lead_recent_activity_channel" value="Blog"> <input type="hidden" name="source_url" id="source_url" value="partners/blog/sublime-text-plugins-2018">
+</form>
+<p><span size="1" style="font-size: xx-small;"><i>By entering your email - we’ll also send you marketing emails related to Shopify. You can unsubscribe anytime.</i></span></p>
+</div>
+</div>
+<div class="text-center subscribe__success" aria-hidden="true">
+<h4 class="subscribe__success__heading ">Our virtual cogs are turning. <br>Please note that it can take up<br>to 15 minutes for our email<br> to reach your inbox.</h4>
+</div>
+</div>
+</div>
+<h3>22. Color Sublime</h3>
+<figure><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: color sublime" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-color-sublime.gif?v=1522176044" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-color-sublime.gif?v=1522176044">
+<figcaption>Toggling through various color schemes with Color Sublime.</figcaption>
+</figure>
+<p><a href="https://packagecontrol.io/packages/Colorsublime" target="_blank" rel="nofollow noopener noreferrer">Color Sublime</a> is a plugin that enables the installation of color schemes to your editor. These color schemes change the syntax highlighting. What’s great about this is you can cycle through a list of schemes, rather than having to install each one and see if you like it.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Colorsublime" target="_blank" rel="nofollow noopener noreferrer">View Color Sublime plugin</a></p>
+<h3>23. DA UI</h3>
+<img alt="sublime text plugins: da ui" style="float: none;" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/daui.gif?v=1522235884" class=" lazyloaded" src="//cdn.shopify.com/s/files/1/0533/2089/files/daui.gif?v=1522235884">
+<p><a href="https://packagecontrol.io/packages/DA%20UI" target="_blank" rel="nofollow noopener noreferrer">DA UI</a> is a set of beautiful, clean interface and syntax themes for Sublime Text 3. The DA UI plugin also has custom icon support with <a href="https://packagecontrol.io/packages/A%20File%20Icon" target="_blank" rel="nofollow noopener noreferrer">A File Icon</a>.</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/DA%20UI" target="_blank" rel="nofollow noopener noreferrer">View DA UI plugin</a></p>
+<h3>24. Theme - Spacegray</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: spacegray" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-spacegray.png?format=webp&amp;v=1522176261" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-spacegray.png?format=webp&amp;v=1522176261"></p>
+<p>Theme - Spacegray is a set of custom UI themes for Sublime Text 2 and 3 which are very minimal and clean. Spacegray also comes with <a href="https://github.com/chriskempson/base16" target="_blank" rel="nofollow noopener noreferrer">Base16</a> color schemes.</p>
+<h3>25. Emoji</h3>
+<p><img class="marketing-block marketing-block--bordered lazyloaded" alt="sublime text plugins: emoji" data-src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-emoji.png?format=webp&amp;v=1522176452" src="//cdn.shopify.com/s/files/1/0533/2089/files/sublime-text-plugins-emoji.png?format=webp&amp;v=1522176452"></p>
+<p>Because...why not. The <a href="https://packagecontrol.io/packages/Emoji" target="_blank" rel="nofollow noopener noreferrer">Emoji</a> plugin allows you to insert emoji via the Command Palette. Amazing!</p>
+<p class="text-center"><a class="marketing-button marketing-button--small" href="https://packagecontrol.io/packages/Emoji" target="_blank" rel="nofollow noopener noreferrer">View Emoji plugin</a></p>
+<p class="marketing-block marketing-block--light marketing-block--padded"><strong>You might also like: </strong><a href="/partners/blog/best-404-pages">How to Craft the Best 404 Pages for your Clients.</a></p>
+<h2>Plugins for all! 🎉</h2>
+<p>There are a ton of plugins you can install to customize your development experience. Hopefully, this article shows you a few new ones that you’ll enjoy. Do what makes sense for you and your job, and whatever will make you more efficient. Happy coding!</p>
+<div class="marketing-block marketing-block--light marketing-block--padded">
+<p class="heading--4">Grow your business with the Shopify Partner Program</p>
+<p>Whether you offer marketing, customization, or web design and development services, the Shopify Partner Program will set you up for success. Join for free and access revenue share opportunities, tools to grow your business, and a passionate commerce community.</p>
+<a class="marketing-button marketing-button--small" data-ga-event="service_partner_cta_click" data-ga-action="submit" data-ga-label="button" data-trekkie-event="service_partner_cta_click" data-trekkie-action="submit" data-trekkie-label="button" data-trekkie-id="service_partner_cta_click_submit_button" target="_blank" href="https://accounts.shopify.com/signup?rid=b98e2a7d-ecbd-4cf7-a39a-e2b75b6b99ed?itcat=partner_blog&amp;itterm=sublime_text_plugins" rel="noopener noreferrer">Sign up</a>
+</div>
+<p>&nbsp;</p>
+</div>
